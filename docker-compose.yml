@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+  smtp:
+    image: "ex_smtp:latest"
+    ports:
+      - "25:2525"
+    env_file:
+      - config/docker.env
